@@ -65,23 +65,21 @@ from mrjoker.modules.helper_funcs.misc import paginate_modules
 from mrjoker.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hello there, I'm [𝓜𝓻,𝓙𝓸𝓴𝓮𝓻](https://telegra.ph/file/6525d89de5b72003d80fa.png)
+Hey there! My name is Stella - I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.
 
-I am English Themed Group Managing Bot and I will help in managing your group like a pro user
-
-🤖 Make sure you read *ABOUT ME* Section Below 🤖 
+Join my [support group](t.me/noobiezhub) to get information on all the latest updates.
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="ABOUT ME😎", callback_data="aboutmanu_"),
+        InlineKeyboardButton(text="ABOUT ME", callback_data="aboutmanu_"),
     ],
     [
-        InlineKeyboardButton(text="⚡️ Help & Commands ⚡️", callback_data="help_back"),
+        InlineKeyboardButton(text=" Help & Commands ", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
-            text="☘️ Add Mr.Joker to your group ☘️", url="t.me/mrjokerpro_bot?startgroup=true"
+            text=" Add Me to your group ", url="t.me/MissStella_robot?startgroup=true"
         ),
     ],
 ]
@@ -89,9 +87,8 @@ buttons = [
 
 HELP_STRINGS = f"""
 *Main Commands :* [🤖](https://telegra.ph/file/6525d89de5b72003d80fa.png)
-🔹 /start: Starts me! SEE MAGIC☠️.
-🔹 /help: Click this, ALL MY COMMAND 😎!
-🔹 /donate: temporary Not available (+_+).
+🔹 /start: Starts me! SEE MAGIC.
+🔹 /help: Click this, ALL MY COMMAND!
 🔹 /settings: 
         ◻️ in PM: will send you your settings for all supported modules.
         ◻️ in a Group: will redirect you to pm, with all that chat's settings.
@@ -358,8 +355,8 @@ def mrjoker_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
-            text=f"*😍 Hi again!  The name's {dispatcher.bot.first_name} 😍 \n\nAs  You I'm a next generational group management bot developed by HITECH🇱🇰 TEAM .* "
-            f"\n\n 🔥 Join [HITECH](https://t.me/lkhitech) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
+            text=f"*Hi again!  The name's {dispatcher.bot.first_name} 😍 \n\nAs  You I'm a next generational group management bot developed by HITECH🇱🇰 TEAM .* "
+            f"\n\n 🔥 Join [NOOBIEZHUB](https://t.me/NOOBIEZHUB) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
             f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
             f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/6525d89de5b72003d80fa.png)"
             f"\n\n👇 You Can Know More About Me By Clicking The Below Buttons 👇",
@@ -369,7 +366,7 @@ def mrjoker_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="🤡 How To Use Me 🤡", callback_data="aboutmanu_howto"
+                            text=" How To Use Me ", callback_data="aboutmanu_howto"
                         ),
                         InlineKeyboardButton(
                             text="T & C", callback_data="aboutmanu_tac"
@@ -377,7 +374,7 @@ def mrjoker_about_callback(update, context):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="Help & Commands ⁉️", callback_data="help_back"
+                            text="Help & Commands ", callback_data="help_back"
                         )
                     ],
                     [InlineKeyboardButton(text="Back", callback_data="aboutmanu_back")],
